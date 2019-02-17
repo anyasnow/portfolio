@@ -39,23 +39,41 @@ main {
   margin: auto;
 }
 
-.navlinks {
-  width: 100%;
-  /* height: 3.9rem; */
+header {
+  text-align: center;
+  margin-left: auto;    
+	margin-right: auto;
+}
+
+.navmenu {
   background-color: var(--main-dark-color);
+  background-position: top;
+  margin-bottom: 5px;
+  z-index:105;
   opacity: 0.9;
-  overflow: auto;
+  /* overflow: auto; */
   position: fixed;
+  width: 100%;
   vertical-align: middle;
-  display: flex;
-  justify-content: center;
-  }
+  margin-left: auto;    
+  margin-right: auto;
+  text-align: center; 
+}
+.navlinks {
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center; 
+  padding: 1.2rem 2rem;
+}
+
+    
 
 .navlinks a {
-  float: right;
+  /* float: right; */
   color: var(--main-light-color);
   text-decoration: none;
-  /* width: 20%;  */
+  /* width: 33%;  */
   text-align: center;
   padding: 1.2rem 2rem;
   font-size: 1.2rem;
@@ -78,7 +96,7 @@ main {
     float: none;
     margin: auto;
     display: block;
-    width: 33%;
+    width: 45%;
     text-align: center;
   }
 }
