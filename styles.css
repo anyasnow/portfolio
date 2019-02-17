@@ -205,21 +205,27 @@ img {
 }
 
 
-.about, .contact {
+.about {
   background-color: var(--main-light-color);
-  padding: 2.5rem 5rem;
+  padding: 2.5rem 3rem;
   margin: auto;
   font-family: 'Quicksand';
   font-size: 1.2rem;
   color: var(--almost-black-color);
   line-height: 2rem;
   text-align: justify;
-  align-items: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
-}
+  }
+
+  .contact {
+    background-color: var(--main-light-color);
+    padding: 2.5rem 3rem;
+    margin: auto;
+    font-family: 'Quicksand';
+    font-size: 1.2rem;
+    color: var(--almost-black-color);
+    line-height: 2rem;
+    text-align: center;
+    }
 
 .projects {
   background-color: var(--almost-white-color);
@@ -229,7 +235,7 @@ img {
   font-size: 1.2rem;
   color: var(--almost-black-color);
   line-height: 2rem;
-  text-align: justify;
+  text-align: center;
 }
 
 
