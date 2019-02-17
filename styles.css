@@ -1,0 +1,184 @@
+
+
+:root {
+  --main-dark-color: #6c648B; /* navbarbg, h1? footerbg maintext, contacticons */
+  --main-light-color: #cae4db; /*CONTRAST smalltext */
+  --accent-bright-color: #cda34f; /* button? */
+  --accent-dull-color: #8F8AA2; /* bg, lessimportanticons */
+  --almost-white-color: rgb(225, 224, 226); /* whitespace */
+  --almost-black-color: rgb(21, 12, 49); /* h1? maintext */ 
+}
+
+body {
+/* width: 90%; */
+margin: 0;
+background-color: var(--accent-dull-color);
+height: auto;
+}
+
+main {
+  background-color: var(--almost-white-color);
+  padding-bottom: 5px;
+}
+
+nav {
+  position: fixed;
+  background-color: var(--main-dark-color);
+  width: 90%;
+  }
+
+.navlinks a {
+  float: left;
+  color: var(--main-light-color);
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: .1em;
+}
+
+.navlinks a:hover {
+background-color: var(--main-light-color);
+color: var(--main-dark-color);
+}
+
+.navlinks {
+  float: right;
+  margin-right: 60px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+button {
+  cursor: pointer;
+  }
+ 
+  .anchor {
+    display: block;
+    height: 50px; 
+    margin-top: -50px; 
+    visibility: hidden;
+  }
+
+h1 {
+font-size: 110px;
+/* font-variant: small-caps; */
+font-weight: normal;
+color: var(--main-dark-color);
+text-shadow: 0 3px 3px var(--main-light-color);
+padding: 120px 30px;
+font-family: 'Sofia';
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .1em; */
+  animation: 
+    typing 3s steps(30, end); 
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+h3 {
+font-family:  'Quicksand';
+font-variant: small-caps;
+letter-spacing: .1em;
+font-size: 35px;
+color: var(--almost-black-color);
+text-shadow: 0 3px 3px var(--main-dark-color);
+text-align: center;
+margin: 0;
+    }
+
+
+  
+.snowflake {
+    height: 60px;
+    margin-left: 50px;
+    vertical-align: middle;
+  }
+
+
+.sunset {
+   background-image:
+     url(images/sunset1.jpg);
+   background-repeat: no-repeat;
+   height: 500px;
+   background-size: cover;
+   background-position: center;
+   padding-top: 65px;
+   padding-left: 150px;
+   border-radius: 10px;
+  }
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 30px 40px;
+  align-items: center;
+  
+}
+
+.insidecontainer {
+  margin: 0px 30px;
+}
+
+.profilepic {
+  border-radius: 50%;
+  height: 200px;
+  padding-right: 35px;
+  filter: sepia(20%) grayscale(60%); 
+}
+
+.projectpic {
+  border-radius: 20px;
+  height: 250px;
+   margin: 0px 30px;    
+}
+
+.projectpic:hover {
+  box-shadow: 0 1px 8px var(--almost-black-color);
+  }
+
+.contactpic {
+  margin: 0px 40px;
+}
+
+.contactpic:hover {
+  background-color
+}
+
+section, p {
+border-radius: 10px;
+background: var(--main-light-color);
+padding: 40px 5px 5px 5px;
+margin: 20px auto 20px auto;
+width: 95%;
+font-family: 'Quicksand';
+font-size: 20px;
+color: var(--almost-black-color);
+line-height: 30px;
+margin-bottom: 5px;
+text-align: justify;
+}
+
+
+footer {
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: var(--main-light-color);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main-dark-color);
+}
