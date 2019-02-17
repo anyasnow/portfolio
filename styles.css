@@ -11,33 +11,36 @@
 
 body {
 /* width: 90%; */
-margin: 0;
+margin: auto;
 background-color: var(--accent-dull-color);
-height: auto;
 }
 
 main {
   background-color: var(--almost-white-color);
-  padding-bottom: 5px;
+  padding-bottom: .3rem;
+  box-shadow: 0 1px 8px var(--almost-black-color);
+  /* width: 100%; */
+
 }
 
 nav {
   position: fixed;
   background-color: var(--main-dark-color);
-  width: 90%;
+  /* width: 90%; */
   }
 
 .navlinks a {
   float: left;
   color: var(--main-light-color);
   text-align: center;
-  padding: 20px 30px;
+  padding: 1.2rem 2rem;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: 'Quicksand';
   font-weight: bold;
   font-variant: small-caps;
   letter-spacing: .1em;
+  transition: 500ms ease; /* double check */
 }
 
 .navlinks a:hover {
@@ -47,7 +50,7 @@ color: var(--main-dark-color);
 
 .navlinks {
   float: right;
-  margin-right: 60px;
+  margin-right: 2rem;
 }
 
 a {
@@ -55,24 +58,24 @@ a {
   cursor: pointer;
   }
 
-button {
+/* button {
   cursor: pointer;
-  }
+  } */
  
   .anchor {
     display: block;
-    height: 50px; 
-    margin-top: -50px; 
+    height: 3rem; 
+    margin-top: -3rem; 
     visibility: hidden;
   }
 
 h1 {
-font-size: 110px;
+font-size: 7rem;
 /* font-variant: small-caps; */
 font-weight: normal;
 color: var(--main-dark-color);
 text-shadow: 0 3px 3px var(--main-light-color);
-padding: 120px 30px;
+padding: 7rem 2rem;
 font-family: 'Sofia';
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -94,7 +97,7 @@ h3 {
 font-family:  'Quicksand';
 font-variant: small-caps;
 letter-spacing: .1em;
-font-size: 35px;
+font-size: 2rem;
 color: var(--almost-black-color);
 text-shadow: 0 3px 3px var(--main-dark-color);
 text-align: center;
@@ -104,8 +107,8 @@ margin: 0;
 
   
 .snowflake {
-    height: 60px;
-    margin-left: 50px;
+    height: 3.75rem;
+    margin-left: 3rem;
     vertical-align: middle;
   }
 
@@ -114,37 +117,45 @@ margin: 0;
    background-image:
      url(images/sunset1.jpg);
    background-repeat: no-repeat;
-   height: 500px;
+   height: 30rem;
    background-size: cover;
    background-position: center;
-   padding-top: 65px;
-   padding-left: 150px;
-   border-radius: 10px;
+   padding-top: 4rem;
+   padding-left: 9rem;
   }
 
 .content {
   display: flex;
   justify-content: center;
-  padding: 30px 40px;
+  padding: 2rem 2.5rem;
   align-items: center;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+  width: 100%;
   
 }
 
 .insidecontainer {
-  margin: 0px 30px;
+  margin: 0rem 2rem;
+}
+
+img {
+  display: inline-block;
+  /* width: 100%; */
 }
 
 .profilepic {
   border-radius: 50%;
-  height: 200px;
-  padding-right: 35px;
-  filter: sepia(20%) grayscale(60%); 
+  height: 14rem;
+  padding-right: 2rem;
+  filter: sepia(20%) grayscale(60%)
 }
 
 .projectpic {
-  border-radius: 20px;
-  height: 250px;
-   margin: 0px 30px;    
+  border-radius: 1rem;
+  height: 12rem;
+  margin: 0rem 2rem;    
 }
 
 .projectpic:hover {
@@ -152,7 +163,7 @@ margin: 0;
   }
 
 .contactpic {
-  margin: 0px 40px;
+  margin: 0rem 2rem;
 }
 
 .contactpic:hover {
@@ -160,25 +171,25 @@ margin: 0;
 }
 
 section, p {
-border-radius: 10px;
+border-radius: .6rem;
 background: var(--main-light-color);
-padding: 40px 5px 5px 5px;
-margin: 20px auto 20px auto;
-width: 95%;
+padding: 2.5rem .3rem .3rem .3rem;
+margin: 1.2rem auto 1.2rem auto;
+/* width: 95%; */
 font-family: 'Quicksand';
-font-size: 20px;
+font-size: 1.2rem;
 color: var(--almost-black-color);
-line-height: 30px;
-margin-bottom: 5px;
+line-height: 2rem;
+margin-bottom: .6rem;
 text-align: justify;
 }
 
 
 footer {
     font-family: 'Quicksand';
-    font-size: 15px;
+    font-size: 1rem;
     color: var(--main-light-color);
-    padding: 10px;
+    padding: .6rem;
     text-align: center;
     background-color: var(--main-dark-color);
 }
