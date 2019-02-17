@@ -39,25 +39,25 @@ main {
   margin: auto;
 }
 
-  
-
 .navlinks {
   width: 100%;
   /* height: 3.9rem; */
   background-color: var(--main-dark-color);
+  opacity: 0.9;
   overflow: auto;
   position: fixed;
-  margin: auto;
   vertical-align: middle;
-}
+  display: flex;
+  justify-content: center;
+  }
 
 .navlinks a {
   float: right;
   color: var(--main-light-color);
   text-decoration: none;
-  width: 20%; 
+  /* width: 20%;  */
   text-align: center;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 2rem;
   font-size: 1.2rem;
   font-family: 'Quicksand';
   font-variant: small-caps;
@@ -103,7 +103,7 @@ font-weight: normal;
 padding: .5rem;
 color: var(--main-dark-color);
 text-shadow: 0 3px 3px var(--main-light-color);
-font-family: 'Sofia';
+font-family: 'SofiaRegular'; 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -173,6 +173,7 @@ padding-bottom: 2rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1rem;
 }
 
 .projectpic {
@@ -180,6 +181,8 @@ padding-bottom: 2rem;
   height: 12rem;
   margin: 0rem 1rem;    
 }
+
+
 
 .projectpic:hover {
   box-shadow: 0 1px 8px var(--almost-black-color);
