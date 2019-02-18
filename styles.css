@@ -305,7 +305,7 @@ h3 {
 #outer-box #inner-box p {
   line-height: 1.5rem;
   padding: 2.5rem 2.5rem 0rem 2.5rem;
-  text-align: justify;
+  text-align: left;
 }
 
 #outer-box:hover #inner-box { 
