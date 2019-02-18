@@ -26,6 +26,11 @@ height: auto;
 background-color: var(--accent-dull-color);
 }
 
+a:focus {
+  outline: 1px solid;
+  outline-offset: .15em;
+}
+
 main {
   box-shadow: 0 1px 8px var(--almost-black-color);
   max-width: 900px;
@@ -312,7 +317,7 @@ h3 {
   cursor: pointer;
 }
 
-#outer-box #inner-box p {
+#inner-box p {
   line-height: 1.5rem;
   padding: 2.5rem 2.5rem 0rem 2.5rem;
   text-align: left;
@@ -323,6 +328,29 @@ h3 {
   opacity: .9;
   transition: opacity .5s;
 }
+
+
+#inner-box a
+{
+    display:none;
+}
+                                          
+#outer-box a:focus + #inner-box a
+{
+    display:block;
+}
+  #inner-box a:focus ~   #inner-box a{
+    display:block !Important;
+  }
+#inner-box a:focus,
+#inner-box a:focus + a,
+#inner-box a:focus + a + a {display:block}
+        
+  
+#inner-box a:focus ~ a {display:block}
+li {list-style:none} 
+
+
 
 
   img {
