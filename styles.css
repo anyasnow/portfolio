@@ -17,6 +17,10 @@
   --almost-black-color: rgb(21, 12, 49); /* h1? maintext */ 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 height: auto;
 background-color: var(--accent-dull-color);
