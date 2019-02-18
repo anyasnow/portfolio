@@ -1,23 +1,12 @@
-/* RESET STYLES */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  font-size:16px;
-  font-weight:inherit;
-  font-style:normal;
-  vertical-align:baseline;
-  background:transparent;
-  outline:0;
-}
+
 
 * {
   box-sizing: border-box;
 }
-  /* body, html {
+  body, html {
   margin: 0 auto;
   padding: 0;
-} */
+}
 
 :root {
   --main-dark-color: #6c648B; /* navlinksbg, h1? footerbg maintext, contacticons */
@@ -67,7 +56,11 @@ header {
   padding: 1.2rem 2rem;
 }
 
-    
+@media screen and (max-width: 500px) {
+  .navlinks {
+  padding: 0.3rem 2rem;
+  }
+}
 
 .navlinks a {
   /* float: right; */
@@ -98,6 +91,8 @@ header {
     display: block;
     width: 45%;
     text-align: center;
+    padding: .2rem 2rem;
+  font-size: 1rem;
   }
 }
 
@@ -132,11 +127,10 @@ font-family: 'SofiaRegular';
 
 @media screen and (max-width: 500px) {
   h1 {
-    padding: 2rem;
+    padding: 1rem;
     font-size: 2.5rem;
    }
 }
-
 
 /* The typing effect */
 @keyframes typing {
@@ -146,11 +140,11 @@ font-family: 'SofiaRegular';
 
 
 
-h3 {
+h2 {
 font-family:  'Quicksand';
 font-variant: small-caps;
 letter-spacing: .1em;
-font-size: 2rem;
+font-size: 3rem;
 color: var(--almost-black-color);
 text-shadow: 0 3px 3px var(--main-dark-color);
 text-align: center;
@@ -158,6 +152,7 @@ margin: 0;
 padding-bottom: 2rem;
     }
 
+    
 
   
 .snowflake {
@@ -180,7 +175,9 @@ padding-bottom: 2rem;
 
   @media screen and (max-width: 500px) {
     .sunset {
-      padding: 12rem 4rem 5rem 4rem;
+      background-image:
+     url(images/sunset5.jpg);
+      padding: 6rem 4rem 5rem 4rem;
      }
   }
 
@@ -192,36 +189,7 @@ padding-bottom: 2rem;
   padding-bottom: 1rem;
 }
 
-.projectpic {
-  border-radius: 1rem;
-  height: 12rem;
-  margin: 0rem 1rem;  
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;  
-}
-
-
-.projectpic:hover {
-  box-shadow: 0 1px 8px var(--almost-black-color);
-    }
-
-img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contactpic {
-  padding: 0;
-  display: inline-block;
-  border-radius: 50px;
-  margin: 0 5rem;
-}
-
-.contactpic:hover {
-  background-color: var(--almost-black-color);
-}
-
+ 
 
 .about {
   background-color: var(--main-light-color);
@@ -236,8 +204,127 @@ img {
 
   @media screen and (max-width: 500px) {
     .about {
-      padding: 12rem 4rem 5rem 4rem;
+      padding: 3rem 2rem;
      }
+  }
+
+ul {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+}
+
+li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  
+.projectpic {
+    border-radius: 3rem;
+    width: 20rem;
+    height: 22rem;
+    box-shadow: 0 3px 8px var(--almost-black-color);
+    } 
+  
+  .projtitle {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: top .5s ease;
+  }
+  
+  #outer-box:hover .projtitle {
+    top: 10px;
+  }
+  
+   
+.techicon {
+    display: inline;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem .5rem;
+      }
+ 
+  
+h3 {
+  text-align: center;
+  color: var(--main-light-color);
+  text-shadow: 7px 7px 20px var(--almost-black-color);
+  font-family: 'Quicksand';
+  font-variant: small-caps;
+  font-size: 2.5rem;
+
+      }
+
+  #clickbutton {
+    text-align: center;
+    width: 6rem;
+    height: 3rem;
+    color: var(--accent-dull-color);
+    border: solid 2px var(--accent-dull-color);
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+  }
+
+  #clickbutton:hover {
+    color: var(--almost-black-color);
+    border: solid 2px var(--almost-black-color);
+    cursor: pointer;
+  }
+
+
+#outer-box #inner-box {
+  background: var(--main-light-color);
+  opacity: 0;
+  transition: opacity .5s;
+ }
+
+
+#outer-box { 
+  display: block;
+  position: relative;
+  }
+
+#outer-box #inner-box {  
+  background: var(--main-light-color);
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: opacity .5s;
+  width: 20rem;
+  height: 22rem;
+  border-radius: 3rem;
+}
+
+#outer-box #inner-box p {
+  line-height: 1.5rem;
+  padding: 2.5rem 2.5rem 0rem 2.5rem;
+  text-align: justify;
+}
+
+#outer-box:hover #inner-box { 
+  opacity: .9;
+  transition: opacity .5s;
+}
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contactpic {
+    padding: 0;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 0 5rem;
+  }
+  
+  .contactpic:hover {
+    background-color: var(--almost-black-color);
   }
 
   .contact {
@@ -253,7 +340,7 @@ img {
 
     @media screen and (max-width: 500px) {
       .contact {
-        padding: 12rem 4rem 5rem 4rem;
+        padding: 3rem 2rem;
        }
     }
 
@@ -270,17 +357,22 @@ img {
 
 @media screen and (max-width: 500px) {
   .projects {
-    padding: 12rem 4rem 5rem 4rem;
+    padding: 3rem 2rem;
    }
 }
 
 
 footer {
     font-family: 'Quicksand';
-    font-size: 1rem;
+    font-size: .8rem;
     color: var(--main-light-color);
-    padding: .6rem;
     text-align: center;
     background-color: var(--main-dark-color);
   
+}
+
+.footericon {
+  margin: .5rem;
+  width: 3rem;
+  height: 3rem;
 }
