@@ -270,11 +270,13 @@ h3 {
     border-radius: 3rem;
     font-size: 1.5rem;
     font-variant: small-caps;
+    cursor: pointer;
   }
 
   #clickbutton:hover {
     color: var(--almost-black-color);
     border: solid 2px var(--almost-black-color);
+    cursor: pointer;
     cursor: pointer;
   }
 
@@ -283,12 +285,14 @@ h3 {
   background: var(--main-light-color);
   opacity: 0;
   transition: opacity .5s;
+  cursor: pointer;
  }
 
 
 #outer-box { 
   display: block;
   position: relative;
+  cursor: pointer;
   }
 
 #outer-box #inner-box {  
@@ -300,17 +304,20 @@ h3 {
   width: 20rem;
   height: 22rem;
   border-radius: 3rem;
+  cursor: pointer;
 }
 
 #outer-box #inner-box p {
   line-height: 1.5rem;
   padding: 2.5rem 2.5rem 0rem 2.5rem;
   text-align: left;
+  cursor: pointer;
 }
 
 #outer-box:hover #inner-box { 
   opacity: .9;
   transition: opacity .5s;
+  cursor: pointer;
 }
 
   img {
