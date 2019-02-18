@@ -1,7 +1,1 @@
-(function() {
-    $("*").on( 'touchstart', function() {
-      $(this).trigger('hover') ;
-    } ).on('touchend', function() {
-      $(this).trigger('hover') ;
-    } ) ;
-  })() ;
+(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS

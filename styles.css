@@ -305,6 +305,7 @@ h3 {
   width: 20rem;
   height: 22rem;
   border-radius: 3rem;
+  visibility: hidden;
   cursor: pointer;
 }
 
@@ -320,8 +321,6 @@ h3 {
   transition: opacity .5s;
 }
 
-@media (hover) {
-}
 
   img {
     margin-left: auto;
