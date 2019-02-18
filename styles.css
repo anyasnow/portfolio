@@ -248,7 +248,7 @@ li {
     cursor: pointer;
   }
   
-  #outer-box:hover .projtitle {
+  #outer-box:hover .projtitle, #outer-box:focus .projtitle {
     top: 10px;
   }
   
@@ -287,7 +287,6 @@ h3 {
     color: var(--almost-black-color);
     border: solid 2px var(--almost-black-color);
     cursor: pointer;
-    cursor: pointer;
   }
 
 
@@ -324,7 +323,7 @@ h3 {
   cursor: pointer;
 }
 
-#outer-box:hover #inner-box { 
+#outer-box:hover #inner-box, #outer-box:focus #innerbox { 
   opacity: .9;
   transition: opacity .5s;
 }
