@@ -1,3 +1,4 @@
-//  <script>
-//         document.addEventListener("touchstart", function() {},false);
-//     </script>
+
+
+        document.addEventListener("touchstart", function() {},false);
+    
