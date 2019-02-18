@@ -236,6 +236,7 @@ li {
     right: 0;
     margin: auto;
     transition: top .5s ease;
+    cursor: pointer;
   }
   
   #outer-box:hover .projtitle {
@@ -317,13 +318,16 @@ h3 {
 #outer-box:hover #inner-box { 
   opacity: .9;
   transition: opacity .5s;
-  cursor: pointer;
+}
+
+@media (hover) {
 }
 
   img {
     margin-left: auto;
     margin-right: auto;
   }
+
   
   .contactpic {
     padding: 0;
