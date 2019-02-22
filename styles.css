@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -19,11 +17,13 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--accent-dull-color);
 }
 
 body {
 height: auto;
-background-color: var(--accent-dull-color);
+width: 900px;
+
 }
 
 a:focus {
@@ -33,14 +33,14 @@ a:focus {
 
 main {
   box-shadow: 0 1px 8px var(--almost-black-color);
-  max-width: 900px;
+ 
   margin: auto;
 }
 
 header {
   text-align: center;
-  margin-left: auto;    
-	margin-right: auto;
+  width: inherit;
+  position: fixed;
 }
 
 .navmenu {
@@ -49,14 +49,9 @@ header {
   margin-bottom: 5px;
   z-index:105;
   opacity: 0.9;
-  /* overflow: auto; */
-  position: fixed;
-  width: 100%;
   vertical-align: middle;
-  margin-left: auto;    
-  margin-right: auto;
-  text-align: center; 
 }
+
 .navlinks {
   margin-left:auto;
   margin-right: auto;
@@ -78,7 +73,7 @@ header {
   /* width: 33%;  */
   text-align: center;
   padding: 1.2rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: 'Quicksand';
   font-variant: small-caps;
   letter-spacing: .1em;
@@ -101,7 +96,7 @@ header {
     width: 100%;
     text-align: center;
     padding: .2rem 2rem;
-  font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -121,11 +116,12 @@ a {
 h1 {
 font-size: 3rem;
 /* font-variant: small-caps; */
-font-weight: normal;
+/* font-weight: normal; */
 padding: .5rem;
 color: var(--main-dark-color);
 text-shadow: 0 3px 3px var(--main-light-color);
-font-family: 'SofiaRegular'; 
+font-family:  'Quicksand';
+font-variant: small-caps;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -199,10 +195,9 @@ line-height: 3rem;
   padding-bottom: 1rem;
 }
 
- 
 
 .about {
-  background-color: var(--main-light-color);
+  background-color: var(--almost-white-color);
   padding: 2.5rem 3rem;
   margin: auto;
   font-family: 'Quicksand';
@@ -223,6 +218,7 @@ ul {
   list-style: none;
   vertical-align: middle;
   padding: 0;
+
 }
 
 li {
@@ -231,26 +227,27 @@ li {
 }
 
   
-.projectpic {
+.project {
     border-radius: 3rem;
-    width: 20rem;
-    height: 22rem;
+    width: 50%;
+    margin: auto; 
     box-shadow: 0 3px 8px var(--almost-black-color);
-    } 
+    background-color: var(--almost-white-color);
+  } 
+
+.project p {
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+    .projectpic {
+      border-radius: 2rem;
+      width: 15rem;
+      height: 12rem;
+      } 
   
-  .projtitle {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: top .5s ease;
-    cursor: pointer;
-  }
-  
-  #outer-box:hover .projtitle, #outer-box:focus .projtitle {
-    top: 10px;
-  }
   
    
 .techicon {
@@ -263,70 +260,32 @@ li {
   
 h3 {
   text-align: center;
-  color: var(--main-light-color);
-  text-shadow: 7px 7px 20px var(--almost-black-color);
+  color: var(--main-dark-color);
   font-family: 'Quicksand';
   font-variant: small-caps;
-  font-size: 2.5rem;
-
+  font-size: 1.5rem;
       }
 
   #clickbutton {
     text-align: center;
     width: 6rem;
     height: 3rem;
-    color: var(--accent-dull-color);
-    border: solid 2px var(--accent-dull-color);
-    border-radius: 3rem;
-    font-size: 1.5rem;
+    
+    color: var(--main-dark-color);
+    background-color: var(--main-light-color);
+    border-radius: 1rem;
+    font-size: 1.2rem;
     font-variant: small-caps;
     cursor: pointer;
+    margin: 0rem 1rem;
   }
 
   #clickbutton:hover {
-    color: var(--almost-black-color);
-    border: solid 2px var(--almost-black-color);
+    color: var(--main-light-color);
+    background-color: var(--main-dark-color);
     cursor: pointer;
   }
 
-
-#outer-box #inner-box {
-  background: var(--main-light-color);
-  opacity: 0;
-  transition: opacity .5s;
-  cursor: pointer;
- }
-
-
-#outer-box { 
-  display: block;
-  position: relative;
-  cursor: pointer;
-  }
-
-#outer-box #inner-box {  
-  background: var(--main-light-color);
-  top: 0;
-  left: 0;
-  position: absolute;
-  transition: opacity .5s;
-  width: 20rem;
-  height: 22rem;
-  border-radius: 3rem;
-  cursor: pointer;
-}
-
-#inner-box p {
-  line-height: 1.5rem;
-  padding: 2.5rem 2.5rem 0rem 2.5rem;
-  text-align: left;
-  cursor: pointer;
-}
-
-#outer-box:hover #inner-box, #outer-box:focus #innerbox { 
-  opacity: .9;
-  transition: opacity .5s;
-}
 
 
 
@@ -365,13 +324,11 @@ h3 {
     }
 
 .projects {
-  background-color: var(--almost-white-color);
+  background-color: var(--main-light-color);
   padding: 2.5rem 5rem;
   margin: auto;
   font-family: 'Quicksand';
-  font-size: 1.2rem;
   color: var(--almost-black-color);
-  line-height: 2rem;
   text-align: center;
 }
 
