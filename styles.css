@@ -68,7 +68,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .navlinks {
-  padding: 0.3rem 2rem;
+  padding: 0.1rem 2rem;
   }
 }
 
@@ -85,7 +85,11 @@ header {
   vertical-align: middle;
 }
 
-
+@media screen and (max-width: 500px) {
+  .navlinks a {
+    font-size: 1rem;
+  }
+}
 .navlinks a:hover {
   background-color: var(--main-light-color);
   color: var(--main-dark-color);
@@ -186,7 +190,7 @@ line-height: 3rem;
     .sunset {
       background-image:
      url(images/sunset5.jpg);
-      padding: 6rem 4rem 5rem 4rem;
+      padding: 7rem 4rem 5rem 4rem;
      }
   }
 
