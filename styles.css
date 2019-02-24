@@ -5,6 +5,8 @@
   html {
   margin: 0 auto;
   padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--accent-dull-color);
   
 }
 
@@ -25,18 +27,12 @@ body {
   --almost-black-color: rgb(21, 12, 49); /* h1? maintext */ 
 }
 
-html {
-  scroll-behavior: smooth;
-  background-color: var(--accent-dull-color);
-}
 
 a:focus {
   outline: none;
 border-radius: 10px;
 border: 2px solid var(--accent-dull-color)
 }
-
-
 
 main {
    margin: 0 auto;
@@ -58,7 +54,6 @@ header {
   text-align: center;
   position: sticky;
   top: 0px;
-
 }
 
 .navlinks {
@@ -114,7 +109,6 @@ a {
   display: inline-block;
   }
 
-
  
   .anchor {
     display: block;
@@ -135,7 +129,7 @@ font-variant: small-caps;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .1em; */
   animation: 
-    typing 4s steps(100, end); 
+    typing 2s steps(100, end); 
 }
 
 @media screen and (max-width: 500px) {
@@ -166,9 +160,7 @@ padding-bottom: 2rem;
 line-height: 3rem;
     }
 
-    
-
-  
+      
 .snowflake {
     height: 4rem;
     margin: 0;
@@ -225,10 +217,10 @@ line-height: 3rem;
   }
 
 ul {
-  display: inline-block;
   list-style: none;
-  margin: auto;
+  text-align: center;
   padding: 0;
+  margin: 0;
   }
 
 li {
@@ -243,7 +235,7 @@ li.project {
   
 .project {
     border-radius: 3rem;
-    width: 400px; 
+    width: 80%; 
     box-shadow: 0 3px 8px var(--almost-black-color);
     background-color: var(--almost-white-color);
   } 
@@ -258,16 +250,15 @@ li.project {
 
     .projectpic {
       border-radius: 2rem;
-      width: 200px;
-      max-width: 100%
+      width: 70%;
       } 
   
    
 .techicon {
     display: inline;
+    margin: 1rem .5rem;
     width: 3rem;
     height: 3rem;
-    margin: 1rem .5rem;
       }
  
   
