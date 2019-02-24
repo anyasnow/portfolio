@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
   html {
   margin: 0 auto;
   padding: 0;
@@ -8,8 +9,8 @@
 }
 
 body {
-  width: 90vw;
-  margin: auto;
+  width: 95%;
+  margin: 0 auto;
 }
 
 
