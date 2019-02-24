@@ -8,7 +8,7 @@
 }
 
 body {
-  width: 90%;
+  width: 90vw;
   margin: auto;
 }
 
@@ -192,8 +192,7 @@ line-height: 3rem;
 .profilepic {
   border-radius: 50%;
   height: 12rem;
-  /* filter: sepia(20%) grayscale(60%); */
-  display: block;
+    /* display: block; */
   padding-bottom: 1rem;
 }
 
@@ -206,7 +205,11 @@ line-height: 3rem;
   font-size: 1.2rem;
   color: var(--almost-black-color);
   line-height: 2rem;
-  text-align: justify;
+  text-align: center;
+  }
+
+  .about p {
+    text-align: justify;
   }
 
   @media screen and (max-width: 500px) {
@@ -242,12 +245,12 @@ li {
   text-align: left;
   margin-left: 2rem;
   margin-right: 2rem;
+  text-align: justify;
 }
 
     .projectpic {
       border-radius: 2rem;
-      width: 15rem;
-      height: 12rem;
+      width: 75%;
       } 
   
   
@@ -266,6 +269,7 @@ h3 {
   font-family: 'Quicksand';
   font-variant: small-caps;
   font-size: 1.5rem;
+  padding-top: .5rem;
       }
 
   #clickbutton {
@@ -286,13 +290,6 @@ h3 {
     color: var(--main-light-color);
     background-color: var(--main-dark-color);
     cursor: pointer;
-  }
-
-
-
-
-  img {
-   margin: auto;
   }
 
   
