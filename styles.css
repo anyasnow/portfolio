@@ -52,6 +52,11 @@ header {
   vertical-align: middle;
   width: 100%;
   text-align: center;
+  position: fixed;
+}
+
+@media (max-width: 500px) {
+  .navmenu { position: fixed!important; }
 }
 
 .navlinks {
