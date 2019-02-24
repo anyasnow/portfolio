@@ -52,8 +52,6 @@ header {
   vertical-align: middle;
   width: 100%;
   text-align: center;
-  position: sticky;
-  top: 0px;
 }
 
 .navlinks {
@@ -211,6 +209,12 @@ line-height: 3rem;
   }
 
   @media screen and (max-width: 500px) {
+    .about p {
+    text-align: left;
+     }
+  }
+
+  @media screen and (max-width: 500px) {
     .about {
       padding: 3rem 2rem;
      }
@@ -244,8 +248,17 @@ li.project {
   font-size: 1.1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+  .project p {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+   }
 }
 
     .projectpic {
@@ -257,10 +270,18 @@ li.project {
 .techicon {
     display: inline;
     margin: 1rem .5rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
       }
  
+@media screen and (max-width: 500px) {
+  .techicon {
+    display: inline;
+    margin: 0.5rem 0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+      }
+    }
   
 h3 {
   text-align: center;
@@ -268,7 +289,7 @@ h3 {
   font-family: 'Quicksand';
   font-variant: small-caps;
   font-size: 1.5rem;
-  padding-top: .5rem;
+  /* padding-top: .5rem; */
       }
 
  
@@ -282,6 +303,12 @@ h3 {
         font-variant: small-caps;
         margin: 1.5rem;
         box-shadow: 0 1px 5px var(--almost-black-color);
+      }
+
+      @media screen and (max-width: 500px) {
+        a.buttonlike  {
+          margin: 0.5rem;;
+         }
       }
     
       .buttonlike:hover {
