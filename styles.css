@@ -30,9 +30,10 @@ html {
 }
 
 a:focus {
-  outline: 1px solid;
-  outline-offset: .15em;
-}
+  outline: 2px solid black;
+  outline-offset: .15em; 
+   
+} 
 
 main {
   box-shadow: 0 1px 8px var(--almost-black-color);
@@ -88,6 +89,8 @@ header {
 .navlinks a:hover {
   background-color: var(--main-light-color);
   color: var(--main-dark-color);
+  background-color: var(--main-light-color);
+  color: var(--main-dark-color);
   }
 
 
@@ -107,6 +110,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   }
+
 
  
   .anchor {
@@ -235,7 +239,6 @@ li {
   
 .project {
     border-radius: 3rem;
-    width: 50%;
     margin: auto; 
     box-shadow: 0 3px 8px var(--almost-black-color);
     background-color: var(--almost-white-color);
@@ -251,7 +254,8 @@ li {
 
     .projectpic {
       border-radius: 2rem;
-      width: 10rem;
+      width: 200px;
+      max-width: 100%
       } 
   
   
