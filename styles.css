@@ -4,6 +4,7 @@
   body, html {
   margin: 0 auto;
   padding: 0;
+  height: 100vh;
 }
 
 :root {
@@ -18,12 +19,6 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--accent-dull-color);
-}
-
-body {
-height: auto;
-width: 900px;
-
 }
 
 a:focus {
@@ -50,6 +45,7 @@ header {
   z-index:105;
   opacity: 0.9;
   vertical-align: middle;
+  width: 100%;
 }
 
 .navlinks {
@@ -114,7 +110,7 @@ a {
   }
 
 h1 {
-font-size: 3rem;
+font-size: 3.5rem;
 /* font-variant: small-caps; */
 /* font-weight: normal; */
 padding: .5rem;
