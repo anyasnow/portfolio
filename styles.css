@@ -5,18 +5,19 @@
   html {
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
+  
 }
 
 body {
   width: 95%;
   margin: 0 auto;
+  box-shadow: 0 1px 8px var(--almost-black-color);
 }
 
 
 
 :root {
-  --main-dark-color: #6c648B; /* navlinksbg, h1? footerbg maintext, contacticons */
+  --main-dark-color: #6c648B; /* navsbg, h1? footerbg maintext, contacticons */
   --main-light-color: #cae4db; /*CONTRAST smalltext */
   --accent-bright-color: #cda34f; /* button? */
   --accent-dull-color: #8F8AA2; /* bg, lessimportanticons */
@@ -30,21 +31,21 @@ html {
 }
 
 a:focus {
-  outline: 2px solid black;
-  outline-offset: .15em; 
-   
-} 
+  outline: none;
+border-radius: 10px;
+border: 2px solid var(--accent-dull-color)
+}
+
+
 
 main {
-  box-shadow: 0 1px 8px var(--almost-black-color);
- 
-  margin: auto;
+   margin: 0 auto;
 }
 
 header {
   text-align: center;
   width: inherit;
-  position: fixed;
+  position: absolute;
 }
 
 .navmenu {
@@ -54,6 +55,10 @@ header {
   opacity: 0.9;
   vertical-align: middle;
   width: 100%;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+
 }
 
 .navlinks {
@@ -61,7 +66,6 @@ header {
   margin-right: auto;
   width: 100%;
   text-align: center; 
-  padding: 1.2rem 2rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -71,17 +75,15 @@ header {
 }
 
 .navlinks a {
-  /* float: right; */
   color: var(--main-light-color);
   text-decoration: none;
-  /* width: 33%;  */
   text-align: center;
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 1.5rem;
   font-family: 'Quicksand';
   font-variant: small-caps;
   letter-spacing: .1em;
-  transition: 500ms ease; /* double check */
+  transition: 500ms ease;
   vertical-align: middle;
 }
 
@@ -109,6 +111,7 @@ header {
 a {
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
   }
 
 
@@ -121,11 +124,9 @@ a {
   }
 
 h1 {
-font-size: 3.5rem;
-/* font-variant: small-caps; */
-/* font-weight: normal; */
-padding: .5rem;
-color: var(--main-dark-color);
+font-size: 4rem;
+padding: 5rem;
+color: var(--almost-black-color);
 text-shadow: 0 3px 3px var(--main-light-color);
 font-family:  'Quicksand';
 font-variant: small-caps;
@@ -134,7 +135,7 @@ font-variant: small-caps;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .1em; */
   animation: 
-    typing 3s steps(30, end); 
+    typing 4s steps(100, end); 
 }
 
 @media screen and (max-width: 500px) {
@@ -183,7 +184,7 @@ line-height: 3rem;
    max-width: 100%;
    background-size:cover;
    background-position: center;
-   padding: 5rem 4rem;
+   padding: 4rem 0rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -224,31 +225,34 @@ line-height: 3rem;
   }
 
 ul {
-  display: inline;
+  display: inline-block;
   list-style: none;
-  vertical-align: middle;
+  margin: auto;
   padding: 0;
-
-}
+  }
 
 li {
   display: inline-block;
   vertical-align: middle;
 }
 
+li.project {
+  margin: 2rem;
+}
+
   
 .project {
     border-radius: 3rem;
-    margin: auto; 
+    width: 400px; 
     box-shadow: 0 3px 8px var(--almost-black-color);
     background-color: var(--almost-white-color);
   } 
 
 .project p {
   font-size: 1.1rem;
-  text-align: left;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 2.5rem;
   text-align: justify;
 }
 
@@ -257,7 +261,6 @@ li {
       width: 200px;
       max-width: 100%
       } 
-  
   
    
 .techicon {
@@ -277,26 +280,25 @@ h3 {
   padding-top: .5rem;
       }
 
-  #clickbutton {
-    text-align: center;
-    width: 6rem;
-    height: 3rem;
+ 
+      a.buttonlike {
+        text-align: center;
+        padding: .5rem 2rem;
+        color: var(--main-dark-color);
+        background-color: var(--main-light-color);
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-variant: small-caps;
+        margin: 1.5rem;
+        box-shadow: 0 1px 5px var(--almost-black-color);
+      }
     
-    color: var(--main-dark-color);
-    background-color: var(--main-light-color);
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    font-variant: small-caps;
-    cursor: pointer;
-    margin: 0rem 1rem;
-  }
-
-  #clickbutton:hover {
-    color: var(--main-light-color);
-    background-color: var(--main-dark-color);
-    cursor: pointer;
-  }
-
+      .buttonlike:hover {
+        color: var(--main-light-color);
+        background-color: var(--main-dark-color);
+        cursor: pointer;
+      }
+    
   
   .contactpic {
     padding: 0;
